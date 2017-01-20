@@ -1,0 +1,4 @@
+/usr/lib64/libreoffice/program/soffice.bin X11 error: Can't open display: 
+   Set DISPLAY environment variable, use -display option
+   or check permissions of your X-Server
+   (See "man X" resp. "man xhost" for details)

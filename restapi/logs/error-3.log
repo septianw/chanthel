@@ -1,0 +1,18 @@
+(node) warning: possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit.
+Trace
+    at process.addListener (events.js:239:17)
+    at ConnectionManager (/var/www/chanthel/restapi/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:45:11)
+    at new ConnectionManager (/var/www/chanthel/restapi/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:12:29)
+    at new MysqlDialect (/var/www/chanthel/restapi/node_modules/sequelize/lib/dialects/mysql/index.js:12:28)
+    at new Sequelize (/var/www/chanthel/restapi/node_modules/sequelize/lib/sequelize.js:233:18)
+    at new Driver (/var/www/chanthel/restapi/node_modules/baciro-orm/driver/mysql.js:4:15)
+    at new Orm (/var/www/chanthel/restapi/node_modules/baciro-orm/database.js:237:21)
+    at Database.model (/var/www/chanthel/restapi/node_modules/baciro-orm/database.js:358:13)
+    at files (/var/www/chanthel/restapi/app.js:108:24)
+    at Layer.handle [as handle_request] (/var/www/chanthel/restapi/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/chanthel/restapi/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/var/www/chanthel/restapi/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/chanthel/restapi/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/chanthel/restapi/node_modules/express/lib/router/index.js:277:22
+    at param (/var/www/chanthel/restapi/node_modules/express/lib/router/index.js:349:14)
+    at param (/var/www/chanthel/restapi/node_modules/express/lib/router/index.js:365:14)
