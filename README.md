@@ -15,7 +15,7 @@ In order to try Casebox on your local machine, we recommend to use [casebox-vagr
 
 ### CI
 
-Build Status [![Build Status](http://ci.casebox.org:8080/buildStatus/icon?job=casebox/development)](http://ci.casebox.org:8080/job/casebox/job/development)
+Build Status [![Build Status](https://travis-ci.org/septianw/cikrak.svg?branch=master)](https://travis-ci.org/septianw/cikrak)
 
 ### Local
 
